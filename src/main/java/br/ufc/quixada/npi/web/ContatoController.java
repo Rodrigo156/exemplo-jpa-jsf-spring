@@ -18,6 +18,10 @@ public class ContatoController {
 		super();
 	}
 
+	public String insere() {
+		return "inserir";
+	}
+	
 	public void inserir() {
 		try {
 			cs.insere();

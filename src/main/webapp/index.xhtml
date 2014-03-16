@@ -7,6 +7,9 @@
 
 <h:head></h:head>
 <body>
+	<h:form>
+		<h:commandLink value="Inserir contato" action ="#{contatoController.insere}"/>
+	</h:form>
 	<p:dataTable var="contato" value="#{contatoController.contatos}">
 		<p:column headerText="Nome">
 			<h:outputText value="#{contato.nome}" />
